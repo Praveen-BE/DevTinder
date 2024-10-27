@@ -57,10 +57,17 @@ Read
 > - Play with routes and route exptensions ex "/hello", "/", "hello/2", "xyz"
 > - Order of the Routes Matter a Lot
 > - Install Postman app and Make a Workspace/Collection > Test API Call
-> - Write Logic to handle GET, POST, PATCH, DELETE API calls and test them on postman
+> - Write Logic to handle GET, POST, PATCH, DELETE http methods API calls and test them on postman
 
-Link For Commit [Explore the HTTP Methods - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/7c50b9c) if you want Checkout😊
+Link For Commit [Explore the HTTP Methods - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/90380f8
+) if you want Checkout😊
 
+> - Explore routing and use of ?, + , (), * in the routes
+> - Use Regex in routes /a/, /.*fly$/
+> - Reading the Query Params in the routes
+> - Reading the Dynamic Routes :-
+<br> &nbsp;&nbsp;&nbsp; Different end point by api header, Query parameters, Request Body
 
-
+Link For Commit [Playing With Routes - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/90380f8
+) if you want Checkout😊
 </details>

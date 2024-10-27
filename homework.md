@@ -1,8 +1,19 @@
+
+
+<style>
+  h1, h2, h3, h4, h5, h6 {
+    background-color: #000;
+    border-bottom: none;
+    color: #A9A9A9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 10px; 
+  }
+</style>
+
 # NAMASTE NODE JS 
 ### Season - 2
-
-
-
 
 ## EP-3 - Creating Our Express Server 🚀 
 
@@ -40,6 +51,8 @@ Link For Commit [Creating Our Express Server - Link🔗](https://github.com/Prav
 > <br> &nbsp;&nbsp;&nbsp; "-g" It installed Globally
 </details>
 
+<hr>
+
 ## EP-4 - Routing and Request Handlers
 
 <details>
@@ -68,6 +81,23 @@ Link For Commit [Explore the HTTP Methods - Link🔗](https://github.com/Praveen
 > - Reading the Dynamic Routes :-
 <br> &nbsp;&nbsp;&nbsp; Different end point by api header, Query parameters, Request Body
 
-Link For Commit [Playing With Routes - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/90380f8
+Link For Commit [Playing With Routes - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/66797d4
 ) if you want Checkout😊
+</details>
+
+## EP-5 - Middlewares & Error Handlers
+
+<details>
+<summary>
+Read
+</summary>
+
+> - Multiple Route Handlers - play with the code
+> - next ()
+> - next function and error along with res.send()
+> - app.use("/route", rH, [rH2, rH3], rH4, rH5);
+
+Link For Commit [Multiple Route Handler - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+) if you want Checkout😊
+
 </details>

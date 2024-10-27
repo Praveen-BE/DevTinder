@@ -97,7 +97,21 @@ Read
 > - next function and error along with res.send()
 > - app.use("/route", rH, [rH2, rH3], rH4, rH5);
 
-Link For Commit [Multiple Route Handler - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [Multiple Route Handler - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/7e5f332
 ) if you want Checkout😊
+> - Why i need multiple route handler ? Answer :- Middleware
+<br> // GET /user => Middleware Chain => Request Handler
+> - **What is Middleware?**
+<br> At its core, middleware in Express.js refers to functions that execute during the lifecycle of a request to a web server. These functions can modify the request and response objects (req, res), and either terminate the request-response cycle or pass control to the next middleware function. <br> 
+ **Why Do We Need it?** <br>
+Middleware functions can be used for various tasks like logging, authentication, error handling, and more.<br>
+In simpler terms, middleware acts as a bridge between the incoming request from the client and the final response from the server.
+
+I read some explainatin, This is One of the Amazing Explanation about Middleware
+[Source From Medium By Aryan Kumar](https://medium.com/@finnkumar6/understanding-middleware-in-express-js-a-comprehensive-guide-5b13d72427fa)
+> - How Express JS Basically handles request behind the scenes
+> - Write a dummy auth middlewares for Admin
+> - Write a dummy auth middlewares for all user routes, except /user/login
+
 
 </details>

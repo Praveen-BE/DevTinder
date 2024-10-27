@@ -113,5 +113,11 @@ I read some explainatin, This is One of the Amazing Explanation about Middleware
 > - Write a dummy auth middlewares for Admin
 > - Write a dummy auth middlewares for all user routes, except /user/login
 
+Link For Commit [Writing Dummy Auth Middleware - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/54c5de1
+) if you want Checkout😊
+> - Error handling app.use("/", (err, req, res, next)=>{ // code })
+> - Proper Way of Error Handling is try Catch But Wild card also nessasary
 
+Link For Commit [ WildCard Error Handler - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+) if you want Checkout😊
 </details>

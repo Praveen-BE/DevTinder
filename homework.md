@@ -118,6 +118,24 @@ Link For Commit [Writing Dummy Auth Middleware - Link🔗](https://github.com/Pr
 > - Error handling app.use("/", (err, req, res, next)=>{ // code })
 > - Proper Way of Error Handling is try Catch But Wild card also nessasary
 
-Link For Commit [ WildCard Error Handler - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ WildCard Error Handler - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/631eb3d
 ) if you want Checkout😊
+
+</details>
+
+## EP - 06 Database , Schema & Models | Mongoose
+
+<details>
+<summary>
+Read
+</summary>
+
+> - Create a free Cluster on MongoDB Official
+> - Mongo Atlas , Connect Your application to the database not Cluster "Connection-URI"/DevTinder
+> - Call the Connect DB function and Connect to database before starting application on port 7777
+> - Create a User Schema & User Models - I face weird Error "User" 😒 collection not work "users"👍 collections is works well.
+> - Create Post/signup API to add data to database
+> - Push some documents using API calls from Postman
+> - Error Handling Using Try / Catch
+
 </details>

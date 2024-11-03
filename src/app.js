@@ -1,37 +1,38 @@
 const express = require("express");
 const { adminAuth, userAuth } = require("./middleware/auth");
+const connectDB = require("./config/database");
+require("dotenv").config();
+const users = require("./models/user");
+
 const app = express();
 const PORT = 7777;
 
-app.use("/", (err, req, res, next)=>{
-    if(err){
-        res.status(500).send("Something Went Wrong!");
+app.use(express.json());
+
+app.post("/signup", async (req, res)=>{
+    try{
+
+        const userObj = {
+            firstName : "Praveen",
+            lastName : "R",
+            emailId : "praveen@gmail.com",
+            password : "Praveen&123"
+        }
+        const userData = new users(userObj);
+        await userData.save();
+        res.send("UserData Added Successfully...");
+    } catch(err) {
+        console.error(err.message);
     }
-});
-
-
-app.use("/user", (req, res)=>{
-    // Logic of DB call and get User Data
-
-    // Proper Way Handling Error Try Catch Block
-    // try {
-        throw new Error("akdhfasj");
-        res.send("User Data Send!");
-    // } catch(err){
-        res.status(500).send("Some Error Contact Support Tema");
-    // }
 
 });
 
-// Wildcard Error handling
-app.use("/", (err, req, res, next)=>{
-    if(err){
-        // also log the error or notify the error for Server
-        console.log("WildCard Error Handler Hited !...")
-        res.status(500).send("Something Went Wrong!");
-    }
-});
+connectDB().then(()=>{
+    console.log("Database Connection established...");
 
-app.listen(PORT, ()=>{
-    console.log(`Server Listening at port - ${PORT}`);
+    app.listen(PORT, ()=>{
+        console.log(`Server Listening at port - ${PORT}`);
+    });
+}).catch((error)=>{
+    console.error("Database cannot be Connected !!!");
 });

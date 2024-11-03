@@ -138,4 +138,28 @@ Read
 > - Push some documents using API calls from Postman
 > - Error Handling Using Try / Catch
 
+Link For Commit [ Database Init with Mongoose - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/e5d04d5
+) if you want Checkout😊
+
+</details>
+
+## EP - 07 - Diving into the APIs
+
+<details>
+<summary>
+Read
+</summary>
+
+> - JS Objects vs JSON
+
+> | JS Objects | JSON |
+> | ---- | -----|
+>  JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method | JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax |
+
+> I already used many times **express.json()** middle ware but I don't know why i use it😆 now I Understand
+> - Make your signup API dynamic to receive data from the end User
+
+Link For Commit [ Dynamic Data in Signup API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+) if you want Checkout😊
+
 </details>

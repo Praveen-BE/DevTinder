@@ -11,14 +11,14 @@ app.use(express.json());
 
 app.post("/signup", async (req, res)=>{
     try{
-
-        const userObj = {
-            firstName : "Praveen",
-            lastName : "R",
-            emailId : "praveen@gmail.com",
-            password : "Praveen&123"
-        }
-        const userData = new users(userObj);
+        // console.log(req.body);
+        // const userObj = {
+        //     firstName : "Praveen",
+        //     lastName : "R",
+        //     emailId : "praveen@gmail.com",
+        //     password : "Praveen&123"
+        // }
+        const userData = new users(req.body);
         await userData.save();
         res.send("UserData Added Successfully...");
     } catch(err) {

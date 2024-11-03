@@ -159,7 +159,15 @@ Read
 > I already used many times **express.json()** middle ware but I don't know why i use it😆 now I Understand
 > - Make your signup API dynamic to receive data from the end User
 
-Link For Commit [ Dynamic Data in Signup API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ Dynamic Data in Signup API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/4d89b8c
+) if you want Checkout😊
+
+> - user findOne with duplicate email ids, which object returned
+> - API - Get user By email
+> - API - Feed API - Get "/feed" - get all the users from the database
+> - API - Get user by ID (model.findById()) => Some Fake user Id get emty result, Some Fake user Id Get Throw Error😒 
+
+Link For Commit [ Get API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
 ) if you want Checkout😊
 
 </details>

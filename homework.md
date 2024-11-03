@@ -167,7 +167,15 @@ Link For Commit [ Dynamic Data in Signup API - Link🔗](https://github.com/Prav
 > - API - Feed API - Get "/feed" - get all the users from the database
 > - API - Get user by ID (model.findById()) => Some Fake user Id get emty result, Some Fake user Id Get Throw Error😒 
 
-Link For Commit [ Get API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ Get API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/c88c884
 ) if you want Checkout😊
+
+> - Create a Delete User API
+> - Difference Between Patch and Put <br> Patch - update only modified field, empty value didn't replace original value
+<br> Put - all value replaced empty string also replace the content value
+> - API - Update a User
+> - Explore the mongoose Documentation for Model methods
+> - What are Options in a Model.findOneAndUpdate method, explore more about it.
+> - API - Update the user with emailId
 
 </details>

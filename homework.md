@@ -178,4 +178,17 @@ Link For Commit [ Get API - Link🔗](https://github.com/Praveen-BE/DevTinder/co
 > - What are Options in a Model.findOneAndUpdate method, explore more about it.
 > - API - Update the user with emailId
 
+Link For Commit [ API delete and Patch PUT - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/92fb0d5
+) if you want Checkout😊
+
 </details>
+
+## Data Sanitization & Schema Validations
+
+> - Explore Schema type options from the documentation
+> - Add required, Unique, Lowercase, min, minlength rim
+> - Add default
+> - Create a custom validation function for gender
+> - Improve the DB Schema put all appropriate validation on Each field in Schema
+> - Add API level Validation on patch request & Signup past api
+> - Add API validation for Each field

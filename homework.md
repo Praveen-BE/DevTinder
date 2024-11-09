@@ -217,7 +217,13 @@ Link For Commit [ Explore Validation Library - Link🔗](https://github.com/Prav
 > - Install bcrypt package
 > - Create a password Hash Using bcrypt.hash & some user is Excrupted password
 
-Link For Commit [ Explore Validation Library - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ Hash The Password - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/fc5a64d
+) if you want Checkout😊
+
+> - create Login API
+> - compare passwords and throw error If email or password is invalid
+
+Link For Commit [ Create Login API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/fc5a64d
 ) if you want Checkout😊
 
 </details>

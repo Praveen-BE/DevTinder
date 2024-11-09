@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 const { defaultProfile, defaultAbout } = require("../constant");
-// const  = require("../constant");
+const validator = require("validator");
 
 const mongoDbUri = process.env.MONGODB_URI;
 
@@ -22,19 +22,22 @@ const userSchema = new mongoose.Schema({
         trim : true,
         set : v => v.replace( /\s\s+/g, '' ),
         maxLength : 100,
+        validate(value){
+            if(!validator.isEmail(value)){
+                throw new Error("Invalid email Address : "+value);
+            }
+        }
     },
     password : {
         type : String,
         require : true,
-        minLength : 8,
         maxLength : 20,
-        validate: { 
-            validator: function (v) {
-                // Regex to check for at least one capital letter, one symbol, and one number 
-                return /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])/.test(v); 
-            }, 
-        message: props => `${props.value} does not meet password criteria!`
-    }},
+        validate(value){
+            if(!validator.isStrongPassword(value)){
+                throw new Error("Password is Weak : "+value);
+            }
+        }
+    },
     age : {
         type : Number,
         min : 16,
@@ -42,6 +45,11 @@ const userSchema = new mongoose.Schema({
     photoUrl : {
         type : String,
         default : defaultProfile,
+        validate(value){
+            if(!validator.isURL(value)){
+                throw new Error("Invalid Photo URL : "+value);
+            }
+        }
     },
     about : {
         type : String,

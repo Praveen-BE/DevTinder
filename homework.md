@@ -185,10 +185,25 @@ Link For Commit [ API delete and Patch PUT - Link🔗](https://github.com/Pravee
 
 ## Data Sanitization & Schema Validations
 
+<details>
+<summary> Read </summary>
+
 > - Explore Schema type options from the documentation
 > - Add required, Unique, Lowercase, min, minlength rim
 > - Add default
 > - Create a custom validation function for gender
 > - Improve the DB Schema put all appropriate validation on Each field in Schema
 > - Add API level Validation on patch request & Signup past api
-> - Add API validation for Each field
+> - Data Sanitizing - Add API validation for Each field
+
+Link For Commit [ Schema Validation & API Level Data Sanitization - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/aa3d537
+) if you want Checkout😊
+
+> - Install Validation
+> - Explore  validator Library function and use validation function for password, email, photoUrl
+> - **Never Trust req.body**
+
+Link For Commit [ Explore Validation Library - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+) if you want Checkout😊
+
+</details>

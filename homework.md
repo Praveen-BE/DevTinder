@@ -203,6 +203,20 @@ Link For Commit [ Schema Validation & API Level Data Sanitization - Link🔗](ht
 > - Explore  validator Library function and use validation function for password, email, photoUrl
 > - **Never Trust req.body**
 
+Link For Commit [ Explore Validation Library - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/77e5e19
+) if you want Checkout😊
+
+</details>
+
+## Encrypting Password
+
+<details>
+<summary>Read</summary>
+
+> - validate data in Signup API
+> - Install bcrypt package
+> - Create a password Hash Using bcrypt.hash & some user is Excrupted password
+
 Link For Commit [ Explore Validation Library - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
 ) if you want Checkout😊
 

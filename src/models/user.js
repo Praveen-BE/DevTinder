@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const { defaultProfile, defaultAbout } = require("../constant");
 const validator = require("validator");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
 
 const mongoDbUri = process.env.MONGODB_URI;
 
@@ -70,6 +72,21 @@ const userSchema = new mongoose.Schema({
     timestamps : true,
 }
 );
+
+userSchema.methods.getJWT = async function (){
+    const user = this;
+
+    const token = await jwt.sign({ _id : user._id }, "DEV@Tinder$790", { expiresIn : 15 });
+
+    return token;
+}
+
+userSchema.methods.validatePassword = async function (passwordInputByUser) {
+    const user = this;
+    const passwordHash = user.password;
+    const isPasswordValid = await bcrypt.compare(passwordInputByUser, passwordHash);
+    return isPasswordValid;
+}
 
 const users = mongoose.model("User", userSchema);
 // const connection = mongoose.createConnection(mongoDbUri);

@@ -223,7 +223,30 @@ Link For Commit [ Hash The Password - Link🔗](https://github.com/Praveen-BE/De
 > - create Login API
 > - compare passwords and throw error If email or password is invalid
 
-Link For Commit [ Create Login API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/fc5a64d
+Link For Commit [ Create Login API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/01493da
+) if you want Checkout😊
+
+</details>
+
+## Authentication, JWT & Cookies
+
+<details>
+
+<summary>Read</summary>
+
+> - Install Cookie-parser
+> - Just send a dummy cookie to user
+> - Create GET /profile API and check if you get the cookie background
+> - Install jsonwebtoken
+> - In login API, after email and password validation, create e JWT token and send it to user in
+> - read the cookeis inside your profile API and find the logged in user
+> - user Auth Middleware
+> - Add the userAuth middleware in profile API and new send Connection Request API
+> - set the Expiry of JWT token and cookies to 7 days
+> - Create userSchema method to getJWT()
+> - Create userSchema method to Comparepassword(passwordInputByUser)
+
+Link For Commit [  - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
 ) if you want Checkout😊
 
 </details>

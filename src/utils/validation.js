@@ -1,4 +1,5 @@
 const validator = require("validator");
+const { ALLOWED_UPDATES } = require("../constant");
 
 const validateSignUpData = (req) =>{
     const { firstName, lastName, emailId, password } = req.body;
@@ -33,4 +34,11 @@ const validateSignInData = (req) =>{
 
 }
 
-module.exports = { validateSignUpData, validateSignInData };
+const validateEditProfileData = (req)=>{
+    const isEditAllowed = Object.keys(req.body).every((field)=>
+    ALLOWED_UPDATES.includes(field));
+
+    return isEditAllowed;
+}
+
+module.exports = { validateSignUpData, validateSignInData, validateEditProfileData };

@@ -183,7 +183,7 @@ Link For Commit [ API delete and Patch PUT - Link🔗](https://github.com/Pravee
 
 </details>
 
-## Data Sanitization & Schema Validations
+## EP - 08 Data Sanitization & Schema Validations
 
 <details>
 <summary> Read </summary>
@@ -208,7 +208,7 @@ Link For Commit [ Explore Validation Library - Link🔗](https://github.com/Prav
 
 </details>
 
-## Encrypting Password
+## EP - 09 Encrypting Password
 
 <details>
 <summary>Read</summary>
@@ -228,7 +228,7 @@ Link For Commit [ Create Login API - Link🔗](https://github.com/Praveen-BE/Dev
 
 </details>
 
-## Authentication, JWT & Cookies
+## EP - 10 Authentication, JWT & Cookies
 
 <details>
 
@@ -246,7 +246,32 @@ Link For Commit [ Create Login API - Link🔗](https://github.com/Praveen-BE/Dev
 > - Create userSchema method to getJWT()
 > - Create userSchema method to Comparepassword(passwordInputByUser)
 
-Link For Commit [  - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ Authentication, JWT & Cookies - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/c8dcfc7
+) if you want Checkout😊
+
+</details>
+
+## EP - 11 Diving into the APIs and Express Router
+
+<details>
+
+<summary>Read</summary>
+
+> - Explore tinder APIs
+> - Create a list all API you can think of in DevTinder
+> - Group multiple routes under respective routes
+
+> - Read documentation for express.Router
+> - Create routes folder for managing auth, profile, request routes
+> - Create authRouter, profileRouter, requestRoutes
+> - Import these routes in app.js
+
+> - Create Post /logout API
+> - Create Patch /profile/edit
+> - Create Patch/profile/password api forgot password API
+> - make sure validate all data in every post patch, request apis
+
+Link For Commit [ Logout + Edit Profile API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
 ) if you want Checkout😊
 
 </details>

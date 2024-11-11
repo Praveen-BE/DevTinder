@@ -2,6 +2,6 @@ const defaultProfile = "https://th.bing.com/th?q=Default+Profile+Avatar+PNG&w=12
 
 const defaultAbout = "This is a default about of the User";
 
-const ALLOWED_UPDATES = ["firstName","lastName","password", "photoUrl", "about", "gender", "age", "skills"];
+const ALLOWED_UPDATES = ["firstName","lastName", "photoUrl", "about", "gender", "age", "skills"];
 
 module.exports = { defaultProfile, defaultAbout, ALLOWED_UPDATES };

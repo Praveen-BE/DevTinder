@@ -271,7 +271,29 @@ Link For Commit [ Authentication, JWT & Cookies - Link🔗](https://github.com/P
 > - Create Patch/profile/password api forgot password API
 > - make sure validate all data in every post patch, request apis
 
-Link For Commit [ Logout + Edit Profile API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ Express Router, Logout ,Edit Profile API - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/f2ef5f3
+) if you want Checkout😊
+
+</details>
+
+## EP - 12 Logical DB Query & Compound Indexes
+
+<details>
+<summary>Read</summary>
+
+> - Read Compound Index Read Article
+> - Read More About Indexs in MongoDB
+> - Why Do We need index in DB !
+> - What is the advantages and disadvandage of Creating ?
+> - Create Connection Request Schema
+> - Send Connection Request API
+> - Proper Validation of Data
+> - Think about all Corner Cases 
+> - $or Query $and Query in Mongoose
+> - Schema.pre("save") function
+> - Always think about corner Cases
+
+Link For Commit [ Query & Index in DB & Handled Corner Cases - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
 ) if you want Checkout😊
 
 </details>

@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
         type : String,
         require : true,
         maxLength : 25,
+        index : true
     },
     lastName : {
         type : String,
@@ -58,11 +59,15 @@ const userSchema = new mongoose.Schema({
     },
     gender : {
         type : String,
-        validate(value){
-            if(!["male","female", "others"].includes(value)){
-                throw new Error("Gender data is not Valid !");
-            }
+        enum : {
+            values : ["male", "female", "other"],
+            message : `{VALUE} is not a valid Gender type`
         },
+        // validate(value){
+        //     if(!["male","female", "others"].includes(value)){
+        //         throw new Error("Gender data is not Valid !");
+        //     }
+        // },
     },
     skills : {
         type : [String]

@@ -293,7 +293,30 @@ Link For Commit [ Express Router, Logout ,Edit Profile API - Link🔗](https://g
 > - Schema.pre("save") function
 > - Always think about corner Cases
 
-Link For Commit [ Query & Index in DB & Handled Corner Cases - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/
+Link For Commit [ Query & Index in DB & Handled Corner Cases - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/cfa390f
 ) if you want Checkout😊
+
+</details>
+
+## EP - 13 Ref, Populate & Thought Process of Writing APIs
+
+<details>
+
+<summary>Read</summary>
+
+> - Write Code With Proper Validations for POST /request/review/:status/:requestId
+> - Thought process - POST vs GET
+> - Read about ref and populate https://mongoosejs.com/docs/populate.html
+> - Create GET user/requests/received with all check
+> - Create GET /user/connections
+
+</details>
+
+<details>
+
+<summary>Read</summary>
+
+> - Logic for GPT /feed API
+> - Explore the $nin, $and, $ne and Other query Operator
 
 </details>

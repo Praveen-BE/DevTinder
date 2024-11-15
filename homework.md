@@ -312,11 +312,21 @@ Link For Commit [ Query & Index in DB & Handled Corner Cases - Link🔗](https:/
 
 </details>
 
+## EP -14 Building Feed API & Pagination
+
 <details>
 
 <summary>Read</summary>
 
 > - Logic for GPT /feed API
 > - Explore the $nin, $and, $ne and Other query Operator
+
+Link For Commit [ Feed /GET API Initialise - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/f47b9f2
+) if you want Checkout😊
+
+> - Implement Pagination in feed api
+
+Link For Commit [ Feed /GET API Initialise - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/f47b9f2
+) if you want Checkout😊
 
 </details>

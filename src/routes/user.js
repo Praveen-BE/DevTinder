@@ -2,6 +2,7 @@ const express = require("express");
 const { userAuth } = require("../middleware/auth");
 const ConnectionRequest = require("../models/connectionRequest");
 const users = require("../models/user");
+const { parse } = require("dotenv");
 const userRouter = express.Router();
 
 const DISPLAY_PROFILE = "firstName lastName age gender skills photoUrl about";
@@ -49,6 +50,10 @@ userRouter.get("/user/connection", userAuth, async(req, res)=>{
 userRouter.get("/feed", userAuth, async(req, res)=>{
     try{
         const loggedInUser = req.user;
+        const page = parseInt(req.query.page) || 1;
+        let limit = parseInt(req.query.limit) || 10;
+        limit = limit < 50 ? limit : 50 ;
+        const skipLimit = (page-1)*limit;
 
         const interactedUser = await ConnectionRequest.find({
             $or : [{fromUserId : loggedInUser._id}, { toUserId : loggedInUser._id}],
@@ -61,13 +66,15 @@ userRouter.get("/feed", userAuth, async(req, res)=>{
             avoidUserInFeed.add(user.toUserId._id.toString());
         });
 
-        // console.log(avoidUserInFeed);
         const showUsersInFeed = await users.find({ 
             $and : [
                 { _id : { $nin : Array.from(avoidUserInFeed) } },
                 { _id : { $ne : loggedInUser._id } }
             ]
-        }).select(DISPLAY_PROFILE);
+        })
+        .select(DISPLAY_PROFILE)
+        .skip(skipLimit)
+        .limit(limit);
 
         res.json({
             data : showUsersInFeed

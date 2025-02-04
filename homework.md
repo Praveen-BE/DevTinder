@@ -326,7 +326,7 @@ Link For Commit [ Feed /GET API Initialise - Link🔗](https://github.com/Pravee
 
 > - Implement Pagination in feed api
 
-Link For Commit [ Feed /GET API Initialise - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/f47b9f2
+Link For Commit [ Feed /GET API Initialise - Link🔗](https://github.com/Praveen-BE/DevTinder/commit/87814b8
 ) if you want Checkout😊
 
 </details>

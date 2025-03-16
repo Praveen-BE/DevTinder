@@ -11,8 +11,8 @@ const requestRouter = require("./routes/request");
 const userRouter = require("./routes/user");
 
 const app = express();
-const PORT = 7777;
-const allowedOrigin = "http://localhost:5173";
+const PORT = process.env.PORT;
+const allowedOrigin = process.env.AWS_EC2_PUBLIC_IP;
 const corsOption = {
   origin: allowedOrigin,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],

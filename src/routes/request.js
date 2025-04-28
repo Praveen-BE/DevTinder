@@ -2,6 +2,7 @@ const express = require("express");
 const { userAuth } = require("../middleware/auth");
 const ConnectionRequest = require("../models/connectionRequest");
 const users = require("../models/user");
+const sendEmail = require("../utils/sendEmail");
 
 const requestRouter = express.Router();
 
@@ -48,8 +49,16 @@ requestRouter.post(
 
       const data = await connectionRequest.save();
 
+      const emailRes = await sendEmail.run(
+        "A new from request from " + req.user.firstName,
+        req.user.firstName + " is " + status + " in " + toUserData
+      );
+
+      console.log(emailRes);
+
       res.json({
         message: req.user.firstName + " " + status + " " + toUserData.firstName,
+        data,
       });
     } catch (err) {
       res.status(400).send("ERROR : " + err.message);

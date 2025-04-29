@@ -12,7 +12,7 @@ const userRouter = require("./routes/user");
 
 const app = express();
 const PORT = process.env.PORT;
-const allowedOrigin = "https://" + process.env.AWS_EC2_PUBLIC_IP;
+const allowedOrigin = "http://" + process.env.AWS_EC2_PUBLIC_IP;
 const corsOption = {
   origin: allowedOrigin,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],

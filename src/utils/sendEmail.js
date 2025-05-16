@@ -48,8 +48,13 @@ const run = async (subject, body) => {
   );
   try {
     return await sesClient.send(sendEmailCommandwithBody);
-  } catch (err) {
-    res.status(400).send("ERROR : " + err.message);
+  } catch (caught) {
+    if (caught instanceof Error && caught.name === "MessageRejected") {
+      /** @type { import('@aws-sdk/client-ses').MessageRejected} */
+      const messageRejectedError = caught;
+      return messageRejectedError;
+    }
+    throw caught;
   }
 };
 

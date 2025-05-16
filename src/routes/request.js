@@ -51,7 +51,14 @@ requestRouter.post(
 
       const emailRes = await sendEmail.run(
         "A new from request from " + req.user.firstName,
-        req.user.firstName + " is " + status + " in " + toUserData
+        req.user.firstName +
+          " is " +
+          status +
+          " in " +
+          toUserData.lastName +
+          " " +
+          toUserData.firstName +
+          "💓"
       );
 
       console.log(emailRes);

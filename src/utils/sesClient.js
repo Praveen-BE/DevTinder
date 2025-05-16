@@ -1,4 +1,6 @@
 const { SESClient } = require("@aws-sdk/client-ses");
+const dotenv = require("dotenv");
+dotenv.config();
 const REGION = "ap-south-1";
 const sesClient = new SESClient({
   region: REGION,

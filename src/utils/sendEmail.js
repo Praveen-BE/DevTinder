@@ -40,12 +40,17 @@ const createSendEmailCommand = (toAddress, fromAddress, subject, body) => {
 };
 
 const run = async (subject, body) => {
-  const sendEmailCommand = createSendEmailCommand(
+  const sendEmailCommandwithBody = createSendEmailCommand(
     "support@devkadhal.shop",
     "praveenrajendiran3939gmail.com",
     subject,
     body
   );
+  try {
+    return await sesClient.send(sendEmailCommandwithBody);
+  } catch (err) {
+    res.status(400).send("ERROR : " + err.message);
+  }
 };
 
 module.exports = { run };

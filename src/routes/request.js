@@ -49,12 +49,12 @@ requestRouter.post(
 
       const data = await connectionRequest.save();
 
-      // const emailRes = await sendEmail.run(
-      //   "A new from request from " + req.user.firstName,
-      //   req.user.firstName + " is " + status + " in " + toUserData
-      // );
+      const emailRes = await sendEmail.run(
+        "A new from request from " + req.user.firstName,
+        req.user.firstName + " is " + status + " in " + toUserData
+      );
 
-      // console.log(emailRes);
+      console.log(emailRes);
 
       res.json({
         message: req.user.firstName + " " + status + " " + toUserData.firstName,

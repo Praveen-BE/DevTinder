@@ -3,7 +3,7 @@ const ConnectionRequest = require("../models/connectionRequest");
 const { subDays, startOfDay, endOfDay } = require("date-fns");
 const sendEmail = require("./sendEmail");
 
-cron.schedule("32 8 * * *", async () => {
+cron.schedule("7 9 * * *", async () => {
   //send Emails to all people who got requests the previous day
   try {
     const yesterday = subDays(new Date(), 0);
@@ -25,10 +25,8 @@ cron.schedule("32 8 * * *", async () => {
     for (const email of listOfEmails) {
       try {
         const res = await sendEmail.run(
-          <h2 style="color: #FF5733; text-align: center;">
-            🔔 New Connection Request for {{ email }}
-          </h2>,
-          <div>
+          "🔔 New Connection Request for" + email,
+          `<div>
             <div style="background-color: #F8F8F8; padding: 20px; border-radius: 8px;">
               <p style="font-family: Arial, sans-serif; font-size: 18px;">
                 🔥 Exciting news! Someone wants to connect with you.
@@ -64,7 +62,7 @@ cron.schedule("32 8 * * *", async () => {
               You’re receiving this email because of your activity on
               DevKadhal.shop.
             </p>
-          </div>,
+          </div>`,
           "praveenrajendiran3939@gmail.com"
         );
       } catch (err) {

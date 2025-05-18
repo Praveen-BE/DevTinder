@@ -9,6 +9,7 @@ const authRouter = require("./routes/auth");
 const profileRouter = require("./routes/profile");
 const requestRouter = require("./routes/request");
 const userRouter = require("./routes/user");
+require("./utils/cronjob");
 
 const app = express();
 const PORT = process.env.PORT;

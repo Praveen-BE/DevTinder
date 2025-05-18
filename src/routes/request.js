@@ -58,7 +58,8 @@ requestRouter.post(
           toUserData.lastName +
           " " +
           toUserData.firstName +
-          "💓"
+          "💓",
+        "praveenrajendiran3939@gmail.com"
       );
 
       console.log(emailRes);
